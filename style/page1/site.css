@@ -1,10 +1,10 @@
 @font-face {
     font-family: Shabnam;
-    src: url(./font/Shabnam-FD.woff);
+    src: url(../font/Shabnam-FD.woff);
   }
   @font-face {
     font-family: ShabnamLight;
-    src: url(./font/Shabnam-Light-FD.woff);
+    src: url(../font/Shabnam-Light-FD.woff);
   }
 
   body{
