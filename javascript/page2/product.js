@@ -128,8 +128,10 @@ const onPageinateBtnClick = (element, pageNum)=>{
 
 const renderPageinateBtn = (count)=>{
     const pageinateBox = $("#paginate");
+    pageinateBox.html(null);
     if(count == 1){
-        pageinateBox.html(`<button pageinate="true" class="btn btn-sm btn-secondary">1</button>`);
+        pageinateBox.html(null);
+        return;
     }
     for (let index = 1; index <= count; index++) {
         const template = `<button pageinate="true" class="btn btn-sm btn-secondary me-2" onclick="onPageinateBtnClick(this , ${index})">${index}</button>`
@@ -155,6 +157,7 @@ const like = (element) => {
 
 const renderFilteredData = (filter) => {
     const filteredData = products.filter((product) => product.name.includes(filter) && product);
+    renderPageinateBtn(Math.round(pageCountCalculation(filteredData)));
     const productBox = $("#products");
     $(productBox).html(null);
     renderData(paginate(filteredData, 3, 1));
