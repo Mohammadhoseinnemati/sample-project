@@ -76,7 +76,6 @@ const products = [
     }
 ];
 
-
 const renderData = (data) => {
     data.forEach((product, i) => {
         const productBox = $("#products");
@@ -105,9 +104,42 @@ const renderData = (data) => {
     });
 }
 
+const paginate = (array, page_size, page_number)=> {
+    // human-readable page numbers usually start with 1, so we reduce 1 in the first argument
+    return array.slice((page_number - 1) * page_size, page_number * page_size);
+}
+
+const pageCountCalculation = (data)=>{
+    const length = data.length;
+    if(length > 3){
+        return length / 3; 
+    }
+    return 1;
+}
+
+const onPageinateBtnClick = (element, pageNum)=>{
+    const productBox = $("#products");
+    $(productBox).html(null);
+    const paginatedData = paginate(products, 3, pageNum);
+    renderData(paginatedData);
+}
+
+const renderPageinateBtn = (count)=>{
+    const pageinateBox = $("#paginate");
+    if(count == 1){
+        pageinateBox.html(`<button pageinate class="btn btn-sm btn-secondary">1</button>`);
+    }
+    for (let index = 1; index <= count; index++) {
+        const template = `<button pageinate class="btn btn-sm btn-secondary me-2" onclick="onPageinateBtnClick(this , ${index})">${index}</button>`
+        pageinateBox.append(template);
+    }
+}
+
 
 $(document).ready(() => {
-    renderData(products);
+    const countOfPage = Math.round(pageCountCalculation(products));
+    renderPageinateBtn(countOfPage);
+    renderData(paginate(products, 3, 1));
 });
 
 const like = (element) => {
