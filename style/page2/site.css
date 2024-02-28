@@ -10,3 +10,16 @@
   body{
     font-family: Shabnam;
   }
+
+  .react-box{
+    padding: 0;
+  }
+
+  .react-box li{
+    list-style-type: none;
+    cursor: pointer;
+  }
+
+  .liked{
+    color: red;
+  }
