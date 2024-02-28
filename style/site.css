@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Shabnam;
+    src: url(./font/Shabnam-FD.woff);
+  }
+  @font-face {
+    font-family: ShabnamLight;
+    src: url(./font/Shabnam-Light-FD.woff);
+  }
+
+  body{
+    font-family: Shabnam;
+  }
+
+  .sidebar{
+    width: 260px;
+    background-color: #3c4b64;
+  }
+
+  .sidebar-brand{
+    width: 80px;
+  }
+
+  .content{
+    padding-right: 260px;
+  }
+
+  .nav-link-group{
+    transition: background-color 0.2s;
+    font-size: 13pt;
+    font-family: ShabnamLight;
+  }
+
+  .nav-link-group:has(.nav-link[aria-expanded="true"]){
+    transition: background-color 0.2s;
+    background-color: #303c50;
+  }
+
+  .nav-link{
+    font-size: 13pt;
+  }
+
+  .nav-icon{
+    font-size: 16pt;
+  }
+
+  .account-dropdown{
+    cursor: pointer;
+    color: rgb(59, 59, 59);
+  }
+
+  .account-dropdown .icon{
+    font-size: 14pt;
+  }
+
+  .account-dropdown:hover{
+    color: rgba(0, 0, 0, 0.884);
+  }
+
+  .float-btn-box{
+    
+  }
+  
+  .float-btn {
+    position: fixed;
+    bottom: 68px;
+    left: 20px;
+    background-color: #3c4b64;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .float-btn:hover {
+    background-color: #445470;
+  }
+
+  .expand-buttons {
+    transition: display 0.2s;
+    width: 42px;
+    position: fixed;
+    bottom: 104px;
+    left: 22px;
+    display: none;
+    text-align: center;
+    padding: 18px 0;
+  }
+
+  .expand-buttons .circle-btn {
+    width: 100%;
+    background-color: #5a6e91;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 16px;
+    font-size: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .expand-buttons .circle-btn:hover {
+    background-color: #5a6e91d5;
+  }

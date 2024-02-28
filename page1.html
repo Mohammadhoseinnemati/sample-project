@@ -1,0 +1,180 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Project</title>
+    <link rel="stylesheet" href="./style/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./style/site.css">
+    <link rel="stylesheet" href="./style/fontawesome/all.min.css">
+</head>
+
+<body class="bg-light">
+    <div class="sidebar position-fixed top-0 start-0 bottom-0">
+        <div class="d-flex justify-content-center p-2">
+            <img class="sidebar-brand" src="./content/brand.png" alt="brand logo">
+        </div>
+        <div class="mt-4">
+            <div class="nav-link-group px-2">
+                <a class="d-flex align-items-center nav-link text-light text-decoration-none" data-bs-toggle="collapse"
+                    href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                    <i class="fa-solid fa-pager nav-icon me-3"></i>
+                    صفحات
+                </a>
+                <div class="nav-group-items collapse" id="collapse1">
+                    <a class="text-light nav-link ms-3" rel="stylesheet" href="/page1.html">
+                        صفحه یکم
+                    </a>
+                    <a class="text-light nav-link ms-3" rel="stylesheet" href="/page2.html">
+                        صفحه دوم
+                    </a>
+                    <a class="text-light nav-link ms-3" rel="stylesheet" href="/page3.html">
+                        صفحه سوم
+                    </a>
+                </div>
+            </div>
+            <div class="nav-link-group px-2">
+                <a class="d-flex align-items-center nav-link text-light text-decoration-none" data-bs-toggle="collapse"
+                    href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                    <i class="fa-solid fa-bars-staggered nav-icon me-3"></i>
+                    تست
+                </a>
+                <div class="nav-group-items collapse" id="collapse2">
+                    <a class="text-light nav-link ms-3" rel="stylesheet" href="">
+                        تست یکم
+                    </a>
+                    <a class="text-light nav-link ms-3" rel="stylesheet" href="">
+                        تست دوم
+                    </a>
+                    <a class="text-light nav-link ms-3" rel="stylesheet" href="">
+                        تست سوم
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content d-flex flex-column min-vh-100">
+        <header class="bg-white py-3 px-5">
+            <div class="d-flex justify-content-end">
+                <div class="dropdown">
+                    <a class="d-flex text-decoration-none align-items-center account-dropdown" id="accountDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        کاربر
+                        <i class="fa-solid fa-user ms-3 icon"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="fa-solid fa-address-card me-2"></i>
+                                پروفایل
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="fa-solid fa-message me-2"></i>
+                                پیام ها
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="fa-solid fa-key me-2"></i>
+                                تغییر رمزعبور
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow-1">
+        </main>
+        <footer class="bg-white py-3 px-5">
+            <div class="text-center text-muted">
+                Developed By MohammadHosein Nemati
+            </div>
+        </footer>
+    </div>
+
+    <button class="float-btn" id="floatBtn"><i class="fa-solid fa-plus"></i></button>
+
+    <div class="expand-buttons" id="expandButtons">
+        <button class="circle-btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">1</button>
+        <button class="circle-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">2</button>
+        <button class="circle-btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">3</button>
+    </div>
+
+    <!-- Modals -->
+    <div>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal1Label">مودال 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                            افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                            فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                            شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal2Label">مودال 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                            افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                            فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                            شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal3Label">مودال 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                            افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                            فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                            شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./library/jquery.min.js"></script>
+<script src="./javascript/fontawesome/all.min.js"></script>
+<script src="./javascript/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./javascript/floatBtn.js"></script>
+
+</html>
