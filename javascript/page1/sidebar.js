@@ -44,3 +44,21 @@ $("#userSideBar").click((event) => {
         $(sidebarContext).fadeOut();
     }
 })
+
+
+const mediaQueryFunction = (mediaQuery)=> {
+    if (mediaQuery.matches) { // If media query matches
+        $("#sideBarToggle").click();
+    }
+}
+
+// Create a MediaQueryList object
+const mediaQuery = window.matchMedia("(max-width: 700px)")
+
+// Call listener function at run time
+mediaQueryFunction(mediaQuery);
+
+// Attach listener function on state changes
+mediaQuery.addEventListener("change", function() {
+    mediaQueryFunction(mediaQuery);
+});
