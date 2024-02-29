@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Shabnam;
+    src: url(../font/Shabnam-FD.woff);
+}
+@font-face {
+    font-family: ShabnamLight;
+    src: url(../font/Shabnam-Light-FD.woff);
+}
+
+body{
+    font-family: Shabnam;
+}
+
+.custom-prev-arrow{
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    right: -30px;
+}
+
+.custom-next-arrow{
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    left: -30px;
+}
+
+.react-box{
+    padding: 0;
+}
+
+.react-box li{
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 16pt;
+}
+
+.liked{
+    color: red;
+}
+
+.product-attributes{
+    height: 40px;
+}

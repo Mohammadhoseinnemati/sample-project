@@ -76,6 +76,8 @@ const products = [
     }
 ];
 
+var filteredDataForPaginate;
+
 const renderData = (data) => {
     data.forEach((product, i) => {
         const productBox = $("#products");
@@ -112,7 +114,7 @@ const paginate = (array, page_size, page_number)=> {
 const pageCountCalculation = (data)=>{
     const length = data.length;
     if(length > 3){
-        return length / 3; 
+        return length / 3;
     }
     return 1;
 }
@@ -122,8 +124,13 @@ const onPageinateBtnClick = (element, pageNum)=>{
     $(element).attr("disabled", true);
     const productBox = $("#products");
     $(productBox).html(null);
-    const paginatedData = paginate(products, 3, pageNum);
-    renderData(paginatedData);
+    if(filteredDataForPaginate){
+        const paginatedData = paginate(filteredDataForPaginate, 3, pageNum);
+        renderData(paginatedData);
+    }else{
+        const paginatedData = paginate(products, 3, pageNum);
+        renderData(paginatedData);
+    }
 }
 
 const renderPageinateBtn = (count)=>{
@@ -157,6 +164,11 @@ const like = (element) => {
 
 const renderFilteredData = (filter) => {
     const filteredData = products.filter((product) => product.name.includes(filter) && product);
+    if(filter === ""){
+        filteredDataForPaginate = null;
+    }else{
+        filteredDataForPaginate = filteredData;
+    }
     renderPageinateBtn(Math.round(pageCountCalculation(filteredData)));
     const productBox = $("#products");
     $(productBox).html(null);

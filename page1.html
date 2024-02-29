@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-light">
-    <div class="sidebar position-fixed top-0 start-0 bottom-0">
+    <div class="sidebar position-fixed top-0 start-0 bottom-0" sidevisibility="true" id="sideBar">
         <div class="d-flex justify-content-center p-2">
             <img class="sidebar-brand" src="./content/brand.png" alt="brand logo">
         </div>
@@ -55,7 +55,10 @@
     </div>
     <div class="content d-flex flex-column min-vh-100">
         <header class="bg-white py-3 px-5">
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="d-flex align-items-center btn btn-light border border-2 w-border-gray py-2" sidetarget="sideBar" onclick="sidebarToggle(event, this)" type="button">
+                    <i class="fa-solid fa-bars text-gray fs-5"></i>
+                </button>
                 <div class="dropdown">
                     <a class="d-flex text-decoration-none align-items-center account-dropdown" id="accountDropdown"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -176,5 +179,6 @@
 <script src="./javascript/fontawesome/all.min.js"></script>
 <script src="./javascript/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="./javascript/page1/floatBtn.js"></script>
+<script src="./javascript/page1/sidebar.js"></script>
 
 </html>
